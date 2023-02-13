@@ -1,17 +1,17 @@
-//variables 
+//variables
 $website-width: 1080px;
-$main-color: #ffbc00;
+$main-color: green;
 $light-color: #f4f4f4;
 $dark-color: #333;
 $medium-color: #ccc;
-$bg-image: url('../img/showcase.jpg');
+$bg-image: url("../img/showcase.jpg");
 
-// set tect color 
+// set text color
 
 @function set-text-color($color) {
-    @if (lightness($color) > 50 ) {
-        @return #000
-    } @else {
-        @return #fff;
-    }
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
 }
